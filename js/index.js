@@ -73,7 +73,7 @@ function queryData(){
     //数据处理 
 productData = allProductData.slice((listQuery.currPage-1) * listQuery.pageSize, listQuery.currPage * listQuery.pageSize)
     listQuery.currPage++;
-    // loading.style.display = 'block';
+    loading.style.display = 'block';
     // 及时更新视图
     bindHTML();
     console.log(productData)
@@ -100,7 +100,7 @@ getAllData();
 load();
 
 function load(){
-    // loading.style.display = 'none';
+    loading.style.display = 'none';
 }
 
 
