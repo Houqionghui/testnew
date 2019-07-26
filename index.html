@@ -1,75 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>新闻列表</title>
-    <link rel="stylesheet" href="./css/reset.min.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/medialist.css">
+	<meta charset="UTF-8">
+	<title>FlappyBird</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		canvas{
+			background-color: #eee;
+			margin: 0 auto;
+			display: block;
+		}
+	</style>
 </head>
-
 <body>
-    <div class="content main">
-        <!-- <h1>新闻列表页</h1> -->
-        <ul class="list">
-          <li class="clearfix">
-                <div class="bui-box clearfix">
-                    <div class="bui-left single-mode-lbox ">
-                        <a href="/group/6709329083735474701/" target="_blank" class="img-wrap">
-                            <img src="./img/1.jpeg" alt="">
+	<!-- 音乐 -->
+	<audio src="music/sfx_die.ogg" id="die"></audio>
+	<audio src="music/sfx_hit.ogg" id="hit"></audio>
+	<audio src="music/sfx_point.ogg" id="point"></audio>
+	<audio src="music/sfx_wing.ogg" id="wing"></audio>
 
-                        </a>
-                    </div>
-                    <div class="single-mode-rbox ">
-                        <div class="single-mode-rbox-cont ">
-                            <div class="title-box" id="titleBox" style="background: pink">
-                                <a href="details.html" id="back">84岁的“深海女王”至今仍未停止潜水，她为何说留给人类拯救海洋的时间已经快没了？
-                                </a>
-                            </div>
-                            <div class="bui-boxaa clearfix">
-                                <div class="bui-left">
-                                    <a href="" class="footer-bar-action media-avatar">
-                                        <img src="" alt="">
-                                    </a>
-                                    <a href="/c/user/token/MS4wLjABAAAANR7Ig2EgSjaYki1pu8QFVS2TIMC4gKMHuX1s8noBqxk/"
-                                        class="footer-bar-action source">&nbsp;三联生活周刊&nbsp;⋅</a>
-                                    <a href="/group/6709329083735474701//#comment_area"
-                                        class="footer-bar-action source">&nbsp;22评论&nbsp;⋅</a>
-                                    <span class="footer-bar-action">&nbsp;10分钟前</span>
+	<canvas id="canvas"></canvas>
 
-                                </div>
-                                <div class="car">
-                                     
-                                        <div class="hezi">
-                                         <a href=""> 
-                                             <span>不感兴趣</span>
-                                                <span>X</span></a>
-                                        </div>
-                                        <span  class="head-car">X</span>
-                            
-                                    </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li> 
-        </ul>
-    </div>
-
-    <div id="loading">
-        正在加载更多.....
-    </div>
-    <script src="./js/index.js"></script>
-
-    <script>
-
-
-    </script>
+	<script type="text/javascript" src="js/underscore-min.js"></script>
+	<script type="text/javascript" src="js/Game.js"></script>
+	<script type="text/javascript" src="js/Background.js"></script>
+	<script type="text/javascript" src="js/Land.js"></script>
+	<script type="text/javascript" src="js/Pipe.js"></script>
+	<script type="text/javascript" src="js/Bird.js"></script>
+	<script type="text/javascript" src="js/SceneManager.js"></script>
+	
+	<script type="text/javascript">
+		var game = new Game();
+	</script>
 </body>
-
-
 </html>
